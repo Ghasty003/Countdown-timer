@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  display: none;
+}
+
 canvas {
   min-height: 100vh;
   height: 100%;

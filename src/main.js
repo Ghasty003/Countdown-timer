@@ -17,6 +17,10 @@ import uranusRingTexture from "../images/uranus ring.png";
 import neptuneTexture from "../images/neptune.jpg";
 import plutoTexture from "../images/pluto.jpg";
 
+window.addEventListener("load", () => {
+  document.querySelector("section").style.display = "block";
+});
+
 const canvas = document.querySelector("canvas");
 const renderer = new THREE.WebGLRenderer({ canvas });
 
