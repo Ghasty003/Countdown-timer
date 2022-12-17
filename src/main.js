@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import gsap from "gsap";
@@ -193,8 +193,22 @@ const countDown = () => {
   p[1].innerHTML = countdownHour;
   p[2].innerHTML = countdownMinute;
   p[3].innerHTML = countdownSecond;
+
+  happyNewYear();
 };
 
 setInterval(() => {
   countDown();
 }, 1000);
+
+function happyNewYear() {
+  if (
+    p[0].innerHTML == 0 &&
+    p[1].innerHTML == 0 &&
+    p[2].innerHTML == 0 &&
+    p[3].innerHTML == 0
+  ) {
+    const newYear = document.querySelector(".new-year");
+    newYear.style.display = "flex";
+  }
+}
