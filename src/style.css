@@ -7,3 +7,8 @@
 body {
   overflow-x: hidden;
 }
+
+canvas {
+  min-height: 100vh;
+  height: 100%;
+}
