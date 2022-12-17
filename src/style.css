@@ -68,12 +68,14 @@ h4 {
   bottom: 40px;
   left: 40px;
   z-index: 2;
-  background-image: linear-gradient(red, yellow);
+  background-image: linear-gradient(red,coral, yellow);
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
+  animation: color 1s;
 }
 
 .new-year {
