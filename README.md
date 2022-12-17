@@ -2,7 +2,7 @@
 2023 countdown timer with awesome animations and 3D effects.
 
 ## Preview
-> <img width="600" src="https://user-images.githubusercontent.com/85039185/208252873-516ceda4-de78-4d1e-9329-09d15dcad405.png" />
+> <img width="100%" src="https://user-images.githubusercontent.com/85039185/208266150-ee2c0f7f-eba4-4163-a08b-1c803908ed3a.png" />
 
 ## Contributing
 <p>Any contribution is welcomed.</p>
