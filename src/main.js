@@ -208,7 +208,10 @@ function happyNewYear() {
     p[2].innerHTML == 0 &&
     p[3].innerHTML == 0
   ) {
+    const h4 = document.querySelector("h4");
     const newYear = document.querySelector(".new-year");
+
+    h4.style.display = "none";
     newYear.style.display = "flex";
   }
 }

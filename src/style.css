@@ -87,3 +87,32 @@ h4 {
   border-radius: 10px;
 }
 
+@media (max-width: 530px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  main {
+    gap: 1rem;
+  }
+
+  main div h3 {
+    font-size: 1.5rem;
+  }
+  
+  main div p {
+    padding: 1.5rem;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 385px) {
+  main div h3 {
+    font-size: 1rem;
+  }
+  main div p {
+    padding: 1rem;
+  }
+}
