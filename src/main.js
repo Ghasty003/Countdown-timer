@@ -31,6 +31,8 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 const orbit = new OrbitControls(camera, canvas);
+orbit.enableDamping = true;
+orbit.enableZoom = false;
 
 camera.position.set(-90, 140, 140);
 orbit.update();
