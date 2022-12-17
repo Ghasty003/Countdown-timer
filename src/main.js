@@ -211,6 +211,7 @@ function happyNewYear() {
     const h4 = document.querySelector("h4");
     const newYear = document.querySelector(".new-year");
 
+    // runs when countdown reaches 0 all through.
     h4.style.display = "none";
     newYear.style.display = "flex";
   }
