@@ -1,6 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import gsap from "gsap";
 
 import starsTexture from "../images/stars.jpg";
 import sunTexture from "../images/sun.jpg";
@@ -142,3 +143,52 @@ window.addEventListener("resize", function () {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+//animation reference.
+const tl = gsap.timeline({
+  defaults: {
+    duration: 1,
+    ease: "bounce.out",
+  },
+});
+
+// Main texts
+const h2 = document.querySelector("h2");
+// const main = document.querySelector("main");
+const p = document.querySelectorAll("p");
+
+tl.from(h2, {
+  y: -100,
+});
+
+tl.from(p, {
+  x: -100,
+});
+
+//date logic
+const countDown = () => {
+  const countDate = new Date("Jan 1, 2023 00:00:00");
+  const presentDate = Date.now();
+  const countTimer = countDate - presentDate;
+
+  // time
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+
+  // countdown timer
+  const countdownDay = Math.floor(countTimer / day);
+  const countdownHour = Math.floor((countTimer % day) / hour);
+  const countdownMinute = Math.floor((countTimer % hour) / minute);
+  const countdownSecond = Math.floor((countTimer % minute) / second);
+
+  p[0].innerHTML = countdownDay;
+  p[1].innerHTML = countdownHour;
+  p[2].innerHTML = countdownMinute;
+  p[3].innerHTML = countdownSecond;
+};
+
+setInterval(() => {
+  countDown();
+}, 1000);

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -11,4 +12,48 @@ body {
 canvas {
   min-height: 100vh;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+h2 {
+  position: relative;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+main div {
+  text-align: center;
+}
+
+main div h3 {
+  font-size: 2rem;
+}
+
+main div p {
+  background: white;
+  padding: 2rem;
+  color: rgb(55, 51, 51);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 3px 3px coral;
 }
