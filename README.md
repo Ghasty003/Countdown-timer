@@ -6,6 +6,7 @@
 
 ## Contributing
 <p>Any contribution is welcomed.</p>
+
 ## 👌🏾 What you have to do to contribute
 
 - [Read the rules](https://github.com/ghasty003/Countdown-timer/blob/main/CONTRIBUTING.md#rules)
