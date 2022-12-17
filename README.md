@@ -66,3 +66,6 @@ git add <path to the file you worked on>
 ```bash
 git push
 ```
+## 🙏🏽 Support
+
+This project needs a star️ from you. Don't forget to leave a star✨
