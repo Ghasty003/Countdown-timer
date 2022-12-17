@@ -173,6 +173,8 @@ tl.from(p, {
   stagger: 0.2,
   ease: "elastic",
   force3D: true,
+  repeat: -1,
+  yoyo: true,
 });
 
 //date logic
