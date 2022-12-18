@@ -25,6 +25,7 @@ const renderer = new THREE.WebGLRenderer({ canvas });
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 
+//create a scene
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(
