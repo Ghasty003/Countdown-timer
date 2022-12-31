@@ -207,10 +207,10 @@ const countDown = () => {
 //   countDown();
 // }, 1000);
 
-p[0].innerHTML == 0
-p[1].innerHTML == 0
-p[2].innerHTML == 0
-p[3].innerHTML == 0
+p[0].innerHTML = 0
+p[1].innerHTML = 0
+p[2].innerHTML = 0
+p[3].innerHTML = 0
 
 function happyNewYear() {
   if (
