@@ -179,7 +179,7 @@ tl.from(p, {
 
 //date logic
 const countDown = () => {
-  const countDate = new Date("Jan 1, 2023 00:00:00");
+  const countDate = new Date("Dec 31, 2022 00:00:00");
   const presentDate = Date.now();
   const countTimer = countDate - presentDate;
 
