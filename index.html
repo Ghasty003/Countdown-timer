@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown 2023</title>
     <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
     <section>
       <h2>The Universe is evolving....</h2>
       <main>
@@ -35,5 +40,11 @@
       <canvas></canvas>
     </section>
     <script type="module" src="/src/main.js"></script>
+
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+  </script>
   </body>
 </html>
