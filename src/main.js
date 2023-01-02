@@ -203,9 +203,20 @@ const countDown = () => {
   happyNewYear();
 };
 
-setInterval(() => {
+const t = setInterval(() => {
   countDown();
 }, 1000);
+
+// I forgot to clear the time interval. So i have to do it manually now.
+
+clearInterval(t);
+
+p[0].innerHTML = 0;
+p[1].innerHTML = 0;
+p[2].innerHTML = 0;
+p[3].innerHTML = 0;
+
+happyNewYear();
 
 function happyNewYear() {
   if (
